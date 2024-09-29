@@ -1,0 +1,30 @@
+/* src/components/Footer.css */
+.footer {
+    background-color: #282c34; /* Dark background */
+    color: white; /* Text color */
+    padding: 20px; /* Padding around the footer */
+    text-align: center; /* Center align text */
+    position: relative; /* Positioning */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+  }
+  
+  .footer-content {
+    max-width: 800px; /* Limit the width */
+    margin: auto; /* Center */
+  }
+  
+  .social-links {
+    margin-top: 10px; /* Space above links */
+  }
+  
+  .social-links a {
+    color: white; /* Link color */
+    margin: 0 10px; /* Space between links */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
