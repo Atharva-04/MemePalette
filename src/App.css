@@ -1,0 +1,145 @@
+/*Header Styling */
+/* Header Styling */
+.Header {
+  text-align: center;          /* Center the header text */
+  padding: 20px;              /* Padding around the header */
+  background-color: #007bff;  /* Warm background color */
+  color: #ffffff;             /* White text color for contrast */
+  border-radius: 8px;         /* Rounded corners */
+  margin-bottom: 20px;        /* Space below the header */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Steps Styling */
+.steps {
+  font-size: 18px;            /* Font size for steps */
+  margin-top: 10px;          /* Space above the steps */
+  line-height: 1.5;          /* Improved line spacing for readability */
+}
+
+/* Steps Span Styling */
+.steps-span {
+  font-weight: bold;          /* Bold each step */
+  margin: 0 5px;             /* Space between steps */
+  color: #ffd700;             /* Golden color for better visibility */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .Header h1 {
+    font-size: 28px;          /* Adjust title size for smaller screens */
+  }
+
+  .steps {
+    font-size: 16px;          /* Adjust steps size for smaller screens */
+  }
+}
+
+
+/* Layout for Card Grid */
+.layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+/* Card Styling */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for visual depth */
+}
+
+/* Card Image Container */
+.card-image {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%; /* Maintain square aspect ratio */
+  position: relative;
+}
+
+/* Card Image */
+.card-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the container without stretching */
+}
+
+/* Card Title */
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+/* Button Container */
+.btn {
+  text-align: center;
+  padding: 10px;
+  margin-top: auto; /* Push button to the bottom of the card */
+}
+
+/* Button Styling */
+.btn button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn button:hover {
+  background-color: #0056b3;
+}
+
+/* Heading Styling */
+h1 {
+  font-size: 24px;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  color: #333;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 1024px) {
+  .layout {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for tablet-sized screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller tablets */
+  }
+
+  .card-title {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .layout {
+    grid-template-columns: 1fr; /* 1 column for mobile screens */
+  }
+
+  .card-title {
+    font-size: 14px; /* Adjust title size for mobile */
+  }
+
+  h1 {
+    font-size: 20px; /* Adjust heading size for mobile */
+  }
+}
