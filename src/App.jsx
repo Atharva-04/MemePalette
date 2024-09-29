@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { getMemes } from './API/API';
 import './App.css';
 import Card from './components/Card';
+import Footer from './components/Footer';
 
 function App() {
   const [data, setData] = useState([]);
@@ -39,6 +40,7 @@ function App() {
           <Card key={el.id} img={el.url} title={el.name} />
         ))}
       </div>
+      <Footer />
     </>
   );
 }
