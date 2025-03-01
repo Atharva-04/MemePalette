@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/Atharva-04/MemePalette'
+            }
+        }
+        stage('Build') {
+            steps {
+                sh 'npm install'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'echo Deploying application...'
+            }
+        }
+    }
+}
